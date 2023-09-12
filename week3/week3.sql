@@ -6,7 +6,7 @@
 -- ᄋ회사의 총 사원수를 제시하라. 1
 -- ᄋ각 branch별 근무하는 사원의 수를 검색하여 branch 이름과 소속 사원수 를 출력하라 3
 
-select first_name, last_name, salary, salary*1.1AS increased_salary
+select first_name, last_name, salary, salary*1.1 AS increased_salary
 FROM employee WHERE branch_id=1;
 
 select first_name, last_name, salary
@@ -21,4 +21,12 @@ INNER JOIN works_with ww ON e.emp_id = ww.emp_id
 INNER JOIN client c ON ww.client_id = c.client_id
 WHERE c.client_id = 406 OR c.client_id = 402 AND salary >= 60000;
 
-select COUNT(*)AS total_salary FROM employee1;
+select SUM(salary) AS total_salary, MAX(salary) AS max_salary, MIN(salary) AS min_salary, AVG(salary) AS avg_salary
+FROM employee;
+
+select COUNT(*)AS total_employees FROM employee;
+
+select b.branch_name, COUNT(e.branch_id) AS employee_in_branch
+FROM employee e
+INNER JOIN branch b ON e.branch_id = b.branch_id
+GROUP BY branch_name;
