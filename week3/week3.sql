@@ -15,7 +15,7 @@ FROM employee WHERE 60000<=salary AND salary<=80000 AND sex = "M";
 select first_name, last_name, branch_id, salary
 FROM employee ORDER BY branch_id DESC, salary ASC;
 
-select first_name, last_name, salary
+select first_name, last_name, total_sales
 FROM employee e
 INNER JOIN works_with ww ON e.emp_id = ww.emp_id
 INNER JOIN client c ON ww.client_id = c.client_id
