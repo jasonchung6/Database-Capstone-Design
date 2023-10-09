@@ -1,0 +1,101 @@
+<h1>{{main_title}}</h1>
+
+<!--Building-->
+<h2>{{title1}}</h2>
+
+<table>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+    </tr>
+    {{#each Building}}
+    <tr>
+        <td>{{B_Id}}</td>
+        <td>{{B_Name}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<!--Department-->
+<h2>{{title2}}</h2>
+
+<table>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Phone number</td>
+    </tr>
+    {{#each Department}}
+    <tr>
+        <td>{{D_Id}}</td>
+        <td>{{D_Name}}</td>
+        <td>{{D_Email}}</td>
+        <td>{{D_PhoneNumber}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<!--Room-->
+<h2>{{title3}}</h2>
+
+<table>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Capacity</td>
+        <td>Building Id</td>
+        <td>Department Id</td>
+    </tr>
+    {{#each Room}}
+    <tr>
+        <td>{{R_Id}}</td>
+        <td>{{R_Name}}</td>
+        <td>{{Capacity}}</td>
+        <td>{{B_Id}}</td>
+        <td>{{D_Id}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<!--Student-->
+<h2>{{title4}}</h2>
+
+<table>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Phone number</td>
+        <td>Major</td>
+    </tr>
+    {{#each Student}}
+    <tr>
+        <td>{{S_Id}}</td>
+        <td>{{S_Name}}</td>
+        <td>{{S_Email}}</td>
+        <td>{{S_PhoneNumber}}</td>
+        <td>{{Major}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<!--Class-->
+<h2>{{title5}}</h2>
+
+<table>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Professor_Id</td>
+        <td>Number of Participants</td>
+    </tr>
+    {{#each Class}}
+    <tr>
+        <td>{{Cla_Id}}</td>
+        <td>{{Cla_Name}}</td>
+        <td>{{Professor_Id}}</td>
+        <td>{{Participants}}</td>
+    </tr>
+    {{/each}}
+</table>
