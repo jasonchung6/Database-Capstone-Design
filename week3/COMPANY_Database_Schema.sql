@@ -86,3 +86,40 @@ INSERT INTO works_with VALUES(105, 404, 33000);
 INSERT INTO works_with VALUES(107, 405, 26000);
 INSERT INTO works_with VALUES(102, 406, 15000);
 INSERT INTO works_with VALUES(105, 406, 130000);
+
+
+-- -- Building
+-- INSERT INTO Building (B_Id, B_Name)
+-- VALUES (10, 'HighTech'),
+-- (2, '2th'),
+-- (5, '5th'),
+-- (6, '6th'),
+-- (60,'60th_Anniv');
+-- -- Room
+-- INSERT INTO Room (R_Id, R_Name, Capacity, B_Id, D_Id)
+-- VALUES ('H-232', '232', 60, 10, 'ICE'),
+-- ('2-101', '101', 50, 2, 'MECH'),
+-- ('5-301', '301', 55, 5, 'EE'),
+-- ('6-601', '601', 60, 6, 'ELE'),
+-- ('60-101', '101', 120, 60, 'ELE');
+-- -- Department
+-- INSERT INTO Department (D_Id, D_Name, D_Email, D_PhoneNumber)
+-- VALUES  ('ICE', 'Department of Information and Communication Engineering','ice@inha.ac.kr','032-860-7430'),
+-- ('CSE', 'Department of Computer Science and Engineering','cse@inha.ac.kr','032-860-7440'),
+-- ('EE', 'Department of Electronic Engineering', 'ee@inha.ac.kr', '032-860-7410'), 
+-- ('ELE', 'Department of Electrical Engineering', 'ele@inha.ac.kr', '032-860-7390'),
+-- ('MECH', 'Department of Mechanical Engineering', 'mech@inha.ac.kr', '032-860-7300');
+-- -- Student
+-- INSERT INTO Student (S_Id, S_Name, S_Email, S_PhoneNumber)
+-- VALUES (12191821,'Chung','12191821@inha.edu', '010-3149-9994'),
+-- (12201234,'Kim','12201234@inha.edu', '010-1111-1111'),
+-- (12211221,'Lee','12211221@inha.edu', '010-2222-2222'),
+-- (12223456,'Park','12223456@inha.edu', '010-2222-2222'),
+-- (12191822,'Chung','12191822@inha.edu', '010-2222-2222');
+-- -- Dep_Stu
+-- INSERT INTO Dep_Stu (S_Id, D_Id_Major)
+-- VALUES  (12191821,'ICE'),
+-- (12201234,'EE'),
+-- (12211221,'ELE'),
+-- (12223456,'MECH'),
+-- (12191822,'ICE');
