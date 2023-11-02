@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
     const Department = await selectSql.getDepartment();
     const Room = await selectSql.getRoom();
     const Student = await selectSql.getStudent();
-    const Class = await selectSql.getClass();
+    const Class = await selectSql.getClass(); //추가
 
     res.render('select', {
         main_title: "Tables in InhaDB",
